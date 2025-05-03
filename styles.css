@@ -20,15 +20,18 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-image {
+    width: 50px; /* Default size */
     height: 50px;
-    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo-text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -152,4 +155,27 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .logo-image {
+        width: 40px; /* Smaller size for mobile */
+        height: 40px;
+    }
 
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .list-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
