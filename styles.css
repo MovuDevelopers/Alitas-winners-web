@@ -17,6 +17,21 @@ header {
     z-index: 1000;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -38,7 +53,7 @@ nav ul li a {
 
 #hero {
     background: url('https://source.unsplash.com/1200x400/?restaurant,food') no-repeat center center/cover;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 3rem 1rem;
 }
